@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111827;
+}
+
+.pagina {
+    min-height: 100vh;
+}
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.encabezado {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.encabezado h1 {
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.encabezado p {
+    color: #b9c0cc;
+    font-size: 17px;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.tarjeta {
+    background-color: #1f2937;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    background-color: #111827;
+    display: block;
+}
+
+.contenido {
+    padding: 20px;
+}
+
+.categoria {
+    display: inline-block;
+    background-color: #0d6efd;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.contenido h2 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.contenido p {
+    color: #c7cbd1;
+    line-height: 1.5;
+    min-height: 85px;
+    margin-bottom: 10px;
+}
+
+.contenido button {
+    width: 100%;
+    margin-top: 5px;
+}
+
+@media (max-width: 900px) {
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .productos {
+        grid-template-columns: 1fr;
+    }
+
+    .encabezado h1 {
+        font-size: 30px;
+    }
+
+    .tarjeta img {
+        height: 250px;
+    }
+}
